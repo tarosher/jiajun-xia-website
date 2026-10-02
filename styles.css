@@ -66,3 +66,6 @@ a:focus-visible,button:focus-visible{outline:3px solid rgba(49,95,118,.42);outli
 .figure-guide p{margin:0!important;font-size:13px!important;line-height:1.65;color:#52615e!important}
 .figure-guide.hero-guide{max-width:900px;margin:16px 0 0;border-left:3px solid var(--blue);border-radius:4px 16px 16px 4px;background:rgba(255,255,255,.52)}
 @media(max-width:680px){.figure-guide{padding:16px 17px}.figure-guide p{font-size:12px!important}}
+
+.visual-context{margin-top:-8px!important;padding:12px 14px;border-left:2px solid #9db3b7;background:#f5f7f4;color:#65716f!important;font-size:11px!important;line-height:1.55}
+.visual-context strong{color:#315f76;font-size:9px;letter-spacing:.06em;text-transform:uppercase}
