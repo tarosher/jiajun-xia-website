@@ -103,3 +103,15 @@ a:focus-visible,button:focus-visible{outline:3px solid rgba(49,95,118,.42);outli
   .album-card{flex-basis:205px}
   .album-card img{height:138px}
 }
+
+/* v8: compact current-thesis card */
+.ongoing-thesis{display:grid;grid-template-columns:220px minmax(0,1fr) 190px;gap:26px;align-items:start;margin-top:34px;padding:24px 26px;border:1px solid #cfd8d5;border-radius:22px;background:linear-gradient(135deg,#f7faf8,#eef4f3);box-shadow:0 10px 28px rgba(20,32,35,.035)}
+.ongoing-thesis-meta{display:flex;flex-direction:column;gap:9px}
+.ongoing-thesis-meta small{font-size:10px;line-height:1.5;color:var(--muted)}
+.ongoing-thesis-main h3{font-family:Georgia,serif;font-size:28px;font-weight:500;line-height:1.1;letter-spacing:-.025em;margin:0 0 10px}
+.ongoing-thesis-main p{font-size:14px;color:#566360;margin:0 0 15px;max-width:760px}
+.ongoing-thesis-status{padding-left:20px;border-left:1px solid #cfd8d5;display:flex;flex-direction:column;gap:8px}
+.ongoing-thesis-status span{display:inline-flex;align-self:flex-start;padding:7px 10px;border-radius:999px;background:#173a48;color:#f4f1ea;font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.ongoing-thesis-status small{font-size:10px;line-height:1.5;color:var(--muted)}
+@media(max-width:980px){.ongoing-thesis{grid-template-columns:1fr}.ongoing-thesis-status{padding-left:0;padding-top:14px;border-left:0;border-top:1px solid #cfd8d5}}
+@media(max-width:680px){.ongoing-thesis{padding:20px 18px}.ongoing-thesis-main h3{font-size:24px}}
