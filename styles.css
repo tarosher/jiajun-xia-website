@@ -69,3 +69,37 @@ a:focus-visible,button:focus-visible{outline:3px solid rgba(49,95,118,.42);outli
 
 .visual-context{margin-top:-8px!important;padding:12px 14px;border-left:2px solid #9db3b7;background:#f5f7f4;color:#65716f!important;font-size:11px!important;line-height:1.55}
 .visual-context strong{color:#315f76;font-size:9px;letter-spacing:.06em;text-transform:uppercase}
+
+/* v7: compact expandable Beyond Engineering photo notebook */
+.beyond-compact{padding:42px 0;background:var(--paper);border-bottom:1px solid var(--line)}
+.photo-album{border:1px solid var(--line);border-radius:19px;background:rgba(255,255,255,.42);overflow:hidden;box-shadow:0 8px 24px rgba(20,32,35,.025)}
+.photo-album summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:17px 21px;user-select:none}
+.photo-album summary::-webkit-details-marker{display:none}
+.photo-album summary:hover{background:rgba(219,230,231,.22)}
+.photo-album summary:focus-visible{outline:3px solid rgba(49,95,118,.34);outline-offset:-3px}
+.album-summary-main{display:flex;align-items:baseline;gap:16px;min-width:0;flex-wrap:wrap}
+.album-summary-main .micro-label{flex:0 0 auto}
+.album-summary-main strong{font-family:Georgia,serif;font-size:18px;font-weight:500;color:var(--ink)}
+.album-summary-main small{font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.album-toggle{flex:0 0 auto;width:30px;height:30px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font-size:19px;color:var(--blue);transition:.22s ease;background:rgba(255,255,255,.55)}
+.photo-album[open] .album-toggle{transform:rotate(45deg)}
+.album-body{padding:0 20px 18px;border-top:1px solid var(--line)}
+.album-intro{margin:14px 0 3px;font-size:12px;color:var(--muted)}
+.album-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-inline:contain;padding:12px 1px 8px;scrollbar-width:thin;scrollbar-color:#b9c3c1 transparent}
+.album-track::-webkit-scrollbar{height:7px}
+.album-track::-webkit-scrollbar-thumb{background:#b9c3c1;border-radius:99px}
+.album-card{flex:0 0 238px;scroll-snap-align:start;margin:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.album-card img{width:100%;height:154px;object-fit:cover}
+.album-card figcaption{padding:10px 12px 12px}
+.album-card b{display:block;font-family:Georgia,serif;font-size:15px;font-weight:500;line-height:1.2;margin-bottom:3px}
+.album-card span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+@media(max-width:680px){
+  .beyond-compact{padding:30px 0}
+  .photo-album summary{padding:15px 16px;gap:12px}
+  .album-summary-main{gap:6px 10px}
+  .album-summary-main strong{font-size:16px;flex-basis:100%}
+  .album-summary-main small{font-size:9px}
+  .album-body{padding:0 14px 14px}
+  .album-card{flex-basis:205px}
+  .album-card img{height:138px}
+}
