@@ -60,3 +60,9 @@ a:focus-visible,button:focus-visible{outline:3px solid rgba(49,95,118,.42);outli
   .figure-link:after{display:none}
   .contact-v3 footer .update-note{margin-left:0}
 }
+/* v6: explanatory guides for original non-English research artifacts */
+.figure-guide{margin:14px 0 34px;padding:19px 21px 20px;border:1px solid #d7dfdc;border-radius:16px;background:linear-gradient(135deg,#f1f5f3,#f7f5ef);box-shadow:0 8px 22px rgba(20,32,35,.025)}
+.figure-guide>span{display:block;margin-bottom:7px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);font-weight:800}
+.figure-guide p{margin:0!important;font-size:13px!important;line-height:1.65;color:#52615e!important}
+.figure-guide.hero-guide{max-width:900px;margin:16px 0 0;border-left:3px solid var(--blue);border-radius:4px 16px 16px 4px;background:rgba(255,255,255,.52)}
+@media(max-width:680px){.figure-guide{padding:16px 17px}.figure-guide p{font-size:12px!important}}
